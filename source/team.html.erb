@@ -1,0 +1,13 @@
+<h1 class="text-center">The Team</h1>
+
+<ul class="list-inline text-center padded">
+  <% ["max", "simon", "koko"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.jpg", class: "img-circle" %>
+      <h3><%=member.capitalize%></h3>
+    </li>
+  <% end %>
+</ul>
+
+
+<h2 class="text-center">Contact: rental@villain.com</h2>

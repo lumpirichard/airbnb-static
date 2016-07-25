@@ -1,10 +1,142 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Villain Rental
 ---
-
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://images.unsplash.com/photo-1430393887253-c9cbe040dc54?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80');">
+  <div class="banner-content">
+    <h1>Villain Rental</h1>
+    <p>Enjoy the life of dirty money</p>
+    <a class="btn btn-primary btn-lg">Check out</a>
+  </div>
 </div>
+
+    <!-- Your features code -->
+    <div class="container">
+
+    <div class="row">
+
+    <div class="col-md-3">
+    <div class="text-center padded">
+    <%= image_tag "dollar.png" %>
+    <h2>The World is Yours</h2>
+    <p>Tony Montana: You wanna fuck with me? Okay. You wanna play rough? Okay. Say hello to my little friend!</p>
+    </div>
+    </div>
+
+    <div class="col-md-3">
+    <div class="text-center padded">
+    <%= image_tag "dollar.png" %>
+    <h2>The World is Yours</h2>
+    <p>Tony Montana: You wanna fuck with me? Okay. You wanna play rough? Okay. Say hello to my little friend!</p>
+    </div>
+    </div>
+
+    <div class="col-md-3">
+    <div class="text-center padded">
+    <%= image_tag "dollar.png" %>
+    <h2>The World is Yours</h2>
+    <p>Tony Montana: You wanna fuck with me? Okay. You wanna play rough? Okay. Say hello to my little friend!</p>
+    </div>
+    </div>
+
+    <div class="col-md-3">
+    <div class="text-center padded">
+    <%= image_tag "dollar.png" %>
+    <h2>The World is Yours</h2>
+    <p>Tony Montana: You wanna fuck with me? Okay. You wanna play rough? Okay. Say hello to my little friend!</p>
+    </div>
+    </div>
+
+
+  </div>
+  </div>
+
+
+
+    <!-- Your cards code -->
+    <div class="wrapper-grey padded">
+
+    <div class="container">
+
+    <h2 class="text-center">Your next trip</h2>
+      <div class="row">
+
+      <div class="col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/7433757901201.560b3b755cf05.jpg');">
+            <div class="card-header"><h3>Miami</h3></div>
+            <div class="card-description">
+              <h4>Tony's home</h4>
+              <p>Bad Ass Mansion</p>
+            </div>
+            <div><img class="avatar card-avatar" src="http://unsplash.it/50X50?random" alt="avatar"></div>
+            <a href="#" class="card-link"></a>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('http://www.themoviedistrict.com/wp-content/uploads/2015/02/thewolfofwallstreet06.jpg');">
+        <div class="card-header"><h3>Long Island</h3></div>
+        <div class="card-description">
+          <h4>Jordan's home</h4>
+          <p>Beach House</p>
+        </div>
+        <div><img class="avatar card-avatar" src="http://unsplash.it/50X50?random" alt="avatar"></div>
+        <a href="#" class="card-link"></a>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 50%), url('https://m-secure.wsj.net/video/20140123/012314mansionhoy/012314mansionhoy_640x360.jpg');">
+        <div class="card-header"><h3>Lake Tahoe</h3></div>
+        <div class="card-description">
+          <h4>Michael's home</h4>
+          <p>Lakeside House</p>
+        </div>
+        <div><img class="avatar card-avatar" src="http://unsplash.it/50X50?random" alt="avatar"></div>
+        <a href="#" class="card-link"></a>
+      </div>
+      </div>
+
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Your newsletter code -->
+
+    <div class="text-center padded">
+    <h2>Stay updated</h2>
+    <p>Leave us your mail and get news from us</p>
+
+    <form action="text"></form>
+    <form class="form-inline">
+        <input type="email" placeholder="bob@gmail.com" class="form-control">
+        <input type="submit" value="Subscribe" class="btn btn-primary btn-bordered btn-bordered-primary">
+      </form>
+    </div>
+
+    <!-- Your map code -->
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE-U7yCPgxGCK21aBgPaoTzmyXcvHgzDw"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
